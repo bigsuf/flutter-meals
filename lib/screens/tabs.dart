@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meals/screens/categories.dart';
 import 'package:meals/screens/favorite.dart';
+import 'package:meals/widgets/main_drawer.dart';
 
 class MainTabBar extends StatefulWidget {
   static const String routerName = '/';
@@ -26,6 +27,7 @@ class _MainTabBarState extends State<MainTabBar> {
       appBar: AppBar(
         title: Text('Meals'),
       ),
+      drawer: MainDrawer(),
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectedTab,

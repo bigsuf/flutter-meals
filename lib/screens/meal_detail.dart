@@ -87,6 +87,12 @@ class MealDetailScreen extends StatelessWidget {
                 itemCount: selectedMeal.steps.length,
               ),
             ),
+            FlatButton.icon(
+              textColor: Colors.red,
+              icon: Icon(Icons.delete),
+              label: Text('Remove'),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
           ],
         ),
       ),
